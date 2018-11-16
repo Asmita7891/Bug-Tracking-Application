@@ -62,9 +62,9 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.Crimson;
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Location = new System.Drawing.Point(-2, -2);
+            this.panel1.Location = new System.Drawing.Point(-3, -2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(283, 458);
+            this.panel1.Size = new System.Drawing.Size(284, 453);
             this.panel1.TabIndex = 9;
             // 
             // label2
@@ -72,11 +72,12 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Lucida Calligraphy", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(3, 210);
+            this.label2.Location = new System.Drawing.Point(-6, 212);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(275, 36);
+            this.label2.Size = new System.Drawing.Size(293, 36);
             this.label2.TabIndex = 12;
-            this.label2.Text = "View Fixed Bugs";
+            this.label2.Text = "View Bug History";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // FixedBug
             // 

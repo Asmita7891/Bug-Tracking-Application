@@ -42,5 +42,10 @@ namespace WindowsFormsApp1
             DataTable dt = vu.Select_fixed();
             dgv_fixed.DataSource = dt;
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

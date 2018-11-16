@@ -47,7 +47,7 @@
             // 
             this.btn_close.BackColor = System.Drawing.Color.Red;
             this.btn_close.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_close.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_close.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_close.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btn_close.Location = new System.Drawing.Point(195, 310);
             this.btn_close.Name = "btn_close";
@@ -61,7 +61,7 @@
             // 
             this.btn_register.BackColor = System.Drawing.SystemColors.HotTrack;
             this.btn_register.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_register.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_register.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_register.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btn_register.Location = new System.Drawing.Point(195, 357);
             this.btn_register.Name = "btn_register";
@@ -75,7 +75,7 @@
             // 
             this.btn_login.BackColor = System.Drawing.SystemColors.HotTrack;
             this.btn_login.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_login.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_login.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_login.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btn_login.Location = new System.Drawing.Point(60, 310);
             this.btn_login.Name = "btn_login";
@@ -129,6 +129,7 @@
             this.textBox_pwd.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.textBox_pwd.Location = new System.Drawing.Point(59, 210);
             this.textBox_pwd.Name = "textBox_pwd";
+            this.textBox_pwd.PasswordChar = '*';
             this.textBox_pwd.Size = new System.Drawing.Size(272, 24);
             this.textBox_pwd.TabIndex = 7;
             // 

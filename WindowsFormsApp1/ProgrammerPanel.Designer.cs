@@ -43,7 +43,7 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(1, -1);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(283, 458);
+            this.panel1.Size = new System.Drawing.Size(283, 445);
             this.panel1.TabIndex = 0;
             // 
             // label1
@@ -61,9 +61,9 @@
             // 
             this.button_assign.BackColor = System.Drawing.Color.Green;
             this.button_assign.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_assign.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.button_assign.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_assign.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button_assign.Location = new System.Drawing.Point(290, 115);
+            this.button_assign.Location = new System.Drawing.Point(290, 102);
             this.button_assign.Name = "button_assign";
             this.button_assign.Size = new System.Drawing.Size(277, 110);
             this.button_assign.TabIndex = 9;
@@ -75,9 +75,9 @@
             // 
             this.btn_changepwd.BackColor = System.Drawing.Color.Green;
             this.btn_changepwd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_changepwd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.btn_changepwd.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_changepwd.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btn_changepwd.Location = new System.Drawing.Point(290, 231);
+            this.btn_changepwd.Location = new System.Drawing.Point(290, 218);
             this.btn_changepwd.Name = "btn_changepwd";
             this.btn_changepwd.Size = new System.Drawing.Size(277, 110);
             this.btn_changepwd.TabIndex = 10;
@@ -89,9 +89,9 @@
             // 
             this.button_lgout.BackColor = System.Drawing.Color.Green;
             this.button_lgout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_lgout.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.button_lgout.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_lgout.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button_lgout.Location = new System.Drawing.Point(290, 347);
+            this.button_lgout.Location = new System.Drawing.Point(290, 334);
             this.button_lgout.Name = "button_lgout";
             this.button_lgout.Size = new System.Drawing.Size(277, 97);
             this.button_lgout.TabIndex = 11;
@@ -103,9 +103,9 @@
             // 
             this.button_about.BackColor = System.Drawing.Color.Green;
             this.button_about.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_about.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.button_about.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_about.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button_about.Location = new System.Drawing.Point(290, 12);
+            this.button_about.Location = new System.Drawing.Point(290, -1);
             this.button_about.Name = "button_about";
             this.button_about.Size = new System.Drawing.Size(277, 97);
             this.button_about.TabIndex = 8;
@@ -117,7 +117,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(570, 456);
+            this.ClientSize = new System.Drawing.Size(570, 442);
             this.Controls.Add(this.button_lgout);
             this.Controls.Add(this.btn_changepwd);
             this.Controls.Add(this.button_assign);
