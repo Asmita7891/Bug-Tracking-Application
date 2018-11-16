@@ -18,7 +18,6 @@ namespace WindowsFormsApp1
             InitializeComponent();
         }
 
-
         private void ChangePassword_Load(object sender, EventArgs e)
         {
             //string username = Form1.uname;
@@ -32,8 +31,7 @@ namespace WindowsFormsApp1
             while (myreader.Read())
             {
                 string sid = myreader.GetInt32("id").ToString();
-              
-                 
+                          
             }
 
         }
@@ -83,7 +81,6 @@ namespace WindowsFormsApp1
                     MessageBox.Show("Password failed to changed. click ok to continue");
 
                 }
-
 
             }
             else

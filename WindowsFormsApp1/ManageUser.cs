@@ -17,12 +17,10 @@ namespace WindowsFormsApp1
         {
             InitializeComponent();
         }
-
         private void button1_Click(object sender, EventArgs e)
         {
             this.Hide();
         }
-
         public DataTable Select_user()
         {
             //connecting to the database
@@ -44,8 +42,6 @@ namespace WindowsFormsApp1
         }
         public DataTable Search(string keyword)
         {
-
-
             //connecting to the database
             MySqlConnection conn = new MySqlConnection("server = localhost; user id = root; database = bugtrack");
             //getting data from database using dataadapter 
@@ -78,8 +74,6 @@ namespace WindowsFormsApp1
                 dataGridView1.DataSource = dt;
             }
         }
-
-   
 
         private void btn_refresh_Click(object sender, EventArgs e)
         {

@@ -22,7 +22,7 @@ namespace WindowsFormsApp1
         {
             Application.Exit();
         }
-
+    
         private void btn_login_Click(object sender, EventArgs e)
         {
             string user = textBox_user.Text;//username
@@ -34,7 +34,6 @@ namespace WindowsFormsApp1
 
             try
             {
-
                 MySqlDataAdapter adapter = new MySqlDataAdapter("Select count(*) from userdetails where username='" + textBox_user.Text + "'and password='" + textBox_pwd.Text + "' and usertype='" + comboBox_utype.Text + "'", conn);
                 DataTable dt = new DataTable();
                 adapter.Fill(dt);//
@@ -91,9 +90,7 @@ namespace WindowsFormsApp1
                                     this.Hide();
                                     break;
                                 }
-
                         }
-
                     }
                     else
                     {
@@ -112,7 +109,6 @@ namespace WindowsFormsApp1
                 //Step :CLose Connection
                 conn.Close();
             }
-
 
         }
 
