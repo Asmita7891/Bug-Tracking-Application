@@ -163,12 +163,13 @@
             // 
             // btn_import
             // 
+            this.btn_import.BackColor = System.Drawing.SystemColors.ControlLight;
             this.btn_import.Location = new System.Drawing.Point(523, 149);
             this.btn_import.Name = "btn_import";
             this.btn_import.Size = new System.Drawing.Size(75, 23);
             this.btn_import.TabIndex = 9;
             this.btn_import.Text = "import";
-            this.btn_import.UseVisualStyleBackColor = true;
+            this.btn_import.UseVisualStyleBackColor = false;
             this.btn_import.Click += new System.EventHandler(this.btn_import_Click);
             // 
             // pictureBox_bugimg
@@ -203,7 +204,7 @@
             // 
             // btn_add
             // 
-            this.btn_add.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.btn_add.BackColor = System.Drawing.Color.Green;
             this.btn_add.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_add.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btn_add.Location = new System.Drawing.Point(116, 4);
@@ -216,7 +217,7 @@
             // 
             // button_update
             // 
-            this.button_update.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.button_update.BackColor = System.Drawing.Color.Green;
             this.button_update.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_update.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button_update.Location = new System.Drawing.Point(283, 3);
@@ -229,7 +230,7 @@
             // 
             // button_delete
             // 
-            this.button_delete.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.button_delete.BackColor = System.Drawing.Color.Green;
             this.button_delete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_delete.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button_delete.Location = new System.Drawing.Point(434, 4);
@@ -242,7 +243,7 @@
             // 
             // button_cancel
             // 
-            this.button_cancel.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.button_cancel.BackColor = System.Drawing.Color.Green;
             this.button_cancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_cancel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button_cancel.Location = new System.Drawing.Point(586, 4);

@@ -45,7 +45,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.Red;
+            this.panel1.BackColor = System.Drawing.Color.Tomato;
             this.panel1.Controls.Add(this.label4);
             this.panel1.Location = new System.Drawing.Point(-1, -1);
             this.panel1.Name = "panel1";
@@ -55,11 +55,11 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Lucida Calligraphy", 20.25F, System.Drawing.FontStyle.Bold);
+            this.label4.Font = new System.Drawing.Font("Lucida Calligraphy", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label4.Location = new System.Drawing.Point(51, 225);
+            this.label4.Location = new System.Drawing.Point(34, 202);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(200, 36);
+            this.label4.Size = new System.Drawing.Size(271, 48);
             this.label4.TabIndex = 1;
             this.label4.Text = "Assign Bugs";
             // 
@@ -119,7 +119,7 @@
             // 
             // btn_appoint
             // 
-            this.btn_appoint.BackColor = System.Drawing.Color.Green;
+            this.btn_appoint.BackColor = System.Drawing.Color.SeaGreen;
             this.btn_appoint.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_appoint.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_appoint.ForeColor = System.Drawing.SystemColors.ButtonHighlight;

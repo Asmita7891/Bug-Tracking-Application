@@ -38,7 +38,7 @@
             // 
             // button_close
             // 
-            this.button_close.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.button_close.BackColor = System.Drawing.Color.RoyalBlue;
             this.button_close.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_close.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_close.ForeColor = System.Drawing.SystemColors.ButtonHighlight;

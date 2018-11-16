@@ -68,6 +68,7 @@
             // 
             // txt_bugtitle
             // 
+            this.txt_bugtitle.BackColor = System.Drawing.SystemColors.Control;
             this.txt_bugtitle.Font = new System.Drawing.Font("Century Gothic", 10F);
             this.txt_bugtitle.Location = new System.Drawing.Point(209, 61);
             this.txt_bugtitle.Name = "txt_bugtitle";
@@ -87,6 +88,7 @@
             // 
             // txt_bugsol
             // 
+            this.txt_bugsol.BackColor = System.Drawing.SystemColors.Control;
             this.txt_bugsol.Location = new System.Drawing.Point(743, 96);
             this.txt_bugsol.Multiline = true;
             this.txt_bugsol.Name = "txt_bugsol";
@@ -124,6 +126,7 @@
             // 
             // txt_method
             // 
+            this.txt_method.BackColor = System.Drawing.SystemColors.Control;
             this.txt_method.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.txt_method.Location = new System.Drawing.Point(744, 32);
             this.txt_method.Name = "txt_method";
@@ -132,6 +135,7 @@
             // 
             // txt_line
             // 
+            this.txt_line.BackColor = System.Drawing.SystemColors.Control;
             this.txt_line.Font = new System.Drawing.Font("Century Gothic", 10F);
             this.txt_line.Location = new System.Drawing.Point(744, 65);
             this.txt_line.Name = "txt_line";
@@ -140,6 +144,7 @@
             // 
             // txt_class
             // 
+            this.txt_class.BackColor = System.Drawing.SystemColors.Control;
             this.txt_class.Font = new System.Drawing.Font("Century Gothic", 10F);
             this.txt_class.Location = new System.Drawing.Point(744, 2);
             this.txt_class.Name = "txt_class";

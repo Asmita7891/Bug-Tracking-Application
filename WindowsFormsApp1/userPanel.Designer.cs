@@ -52,7 +52,7 @@
             // 
             this.btnLogout.BackColor = System.Drawing.SystemColors.HotTrack;
             this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.btnLogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogout.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnLogout.Location = new System.Drawing.Point(286, 348);
             this.btnLogout.Name = "btnLogout";
@@ -66,7 +66,7 @@
             // 
             this.button_about.BackColor = System.Drawing.SystemColors.HotTrack;
             this.button_about.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_about.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.button_about.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_about.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button_about.Location = new System.Drawing.Point(286, 232);
             this.button_about.Name = "button_about";
@@ -80,7 +80,7 @@
             // 
             this.button_changePwd.BackColor = System.Drawing.SystemColors.HotTrack;
             this.button_changePwd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_changePwd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.button_changePwd.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_changePwd.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button_changePwd.Location = new System.Drawing.Point(286, 116);
             this.button_changePwd.Name = "button_changePwd";
@@ -94,7 +94,7 @@
             // 
             this.button_bugreport.BackColor = System.Drawing.SystemColors.HotTrack;
             this.button_bugreport.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_bugreport.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.button_bugreport.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_bugreport.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button_bugreport.Location = new System.Drawing.Point(286, 0);
             this.button_bugreport.Name = "button_bugreport";
