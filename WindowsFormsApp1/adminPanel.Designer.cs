@@ -31,7 +31,6 @@
             this.btn_manageuser = new System.Windows.Forms.Button();
             this.button_fixed = new System.Windows.Forms.Button();
             this.btn_managebug = new System.Windows.Forms.Button();
-            this.button_audit = new System.Windows.Forms.Button();
             this.btn_assignbug = new System.Windows.Forms.Button();
             this.btnLogout = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -80,19 +79,6 @@
             this.btn_managebug.Text = "Manage Bugs";
             this.btn_managebug.UseVisualStyleBackColor = false;
             this.btn_managebug.Click += new System.EventHandler(this.btn_managebug_Click);
-            // 
-            // button_audit
-            // 
-            this.button_audit.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.button_audit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_audit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.button_audit.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button_audit.Location = new System.Drawing.Point(347, 235);
-            this.button_audit.Name = "button_audit";
-            this.button_audit.Size = new System.Drawing.Size(346, 72);
-            this.button_audit.TabIndex = 0;
-            this.button_audit.Text = "Bug Audit History";
-            this.button_audit.UseVisualStyleBackColor = false;
             // 
             // btn_assignbug
             // 
@@ -151,7 +137,6 @@
             this.Controls.Add(this.btn_manageuser);
             this.Controls.Add(this.btnLogout);
             this.Controls.Add(this.btn_assignbug);
-            this.Controls.Add(this.button_audit);
             this.Controls.Add(this.btn_managebug);
             this.Controls.Add(this.button_fixed);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
@@ -169,7 +154,6 @@
         private System.Windows.Forms.Button btn_manageuser;
         private System.Windows.Forms.Button button_fixed;
         private System.Windows.Forms.Button btn_managebug;
-        private System.Windows.Forms.Button button_audit;
         private System.Windows.Forms.Button btn_assignbug;
         private System.Windows.Forms.Button btnLogout;
         private System.Windows.Forms.Panel panel1;

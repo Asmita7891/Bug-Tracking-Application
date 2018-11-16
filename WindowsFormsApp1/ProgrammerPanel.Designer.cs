@@ -39,7 +39,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.Crimson;
+            this.panel1.BackColor = System.Drawing.Color.Purple;
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(1, -1);
             this.panel1.Name = "panel1";
@@ -49,17 +49,17 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Lucida Calligraphy", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Lucida Calligraphy", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(42, 201);
+            this.label1.Location = new System.Drawing.Point(3, 202);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(182, 36);
+            this.label1.Size = new System.Drawing.Size(274, 24);
             this.label1.TabIndex = 12;
-            this.label1.Text = "Dashboard";
+            this.label1.Text = "ProgrammerDashboard";
             // 
             // button_assign
             // 
-            this.button_assign.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.button_assign.BackColor = System.Drawing.Color.Green;
             this.button_assign.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_assign.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.button_assign.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -73,7 +73,7 @@
             // 
             // btn_changepwd
             // 
-            this.btn_changepwd.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.btn_changepwd.BackColor = System.Drawing.Color.Green;
             this.btn_changepwd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_changepwd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.btn_changepwd.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -87,13 +87,13 @@
             // 
             // button_lgout
             // 
-            this.button_lgout.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.button_lgout.BackColor = System.Drawing.Color.Green;
             this.button_lgout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_lgout.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.button_lgout.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button_lgout.Location = new System.Drawing.Point(290, 347);
             this.button_lgout.Name = "button_lgout";
-            this.button_lgout.Size = new System.Drawing.Size(277, 110);
+            this.button_lgout.Size = new System.Drawing.Size(277, 97);
             this.button_lgout.TabIndex = 11;
             this.button_lgout.Text = "Logout";
             this.button_lgout.UseVisualStyleBackColor = false;
@@ -101,13 +101,13 @@
             // 
             // button_about
             // 
-            this.button_about.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.button_about.BackColor = System.Drawing.Color.Green;
             this.button_about.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_about.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.button_about.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button_about.Location = new System.Drawing.Point(290, -1);
+            this.button_about.Location = new System.Drawing.Point(290, 12);
             this.button_about.Name = "button_about";
-            this.button_about.Size = new System.Drawing.Size(277, 110);
+            this.button_about.Size = new System.Drawing.Size(277, 97);
             this.button_about.TabIndex = 8;
             this.button_about.Text = "Add Bug Solution";
             this.button_about.UseVisualStyleBackColor = false;

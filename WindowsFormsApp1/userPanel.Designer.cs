@@ -42,11 +42,11 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Lucida Calligraphy", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(42, 209);
+            this.label1.Location = new System.Drawing.Point(16, 210);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(182, 36);
+            this.label1.Size = new System.Drawing.Size(254, 36);
             this.label1.TabIndex = 8;
-            this.label1.Text = "Dashboard";
+            this.label1.Text = "UserDashboard";
             // 
             // btnLogout
             // 
@@ -106,7 +106,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.Green;
+            this.panel1.BackColor = System.Drawing.Color.Crimson;
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(-4, 0);
             this.panel1.Name = "panel1";
