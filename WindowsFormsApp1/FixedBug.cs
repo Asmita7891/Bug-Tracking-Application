@@ -24,20 +24,19 @@ namespace WindowsFormsApp1
         }
         public DataTable Select_fixed()
         {
-
-            //connecting to the database
+            //Database connection
             MySqlConnection conn = new MySqlConnection("server = localhost; user id = root; database = bugtrack");
-            //getting data from database using dataadapter 
+            //Getting data from database using DataAdapter 
             MySqlDataAdapter sda = new MySqlDataAdapter("Select * from bugsolve ", conn);
-            //to hold data from database
+            //Holding data from database
             DataTable dt = new DataTable();
-            sda.Fill(dt);//it means the fill in our database
+            sda.Fill(dt); //It means to fill in our database
             return dt;
         }
 
         private void FixedBug_Load(object sender, EventArgs e)
         {
-            // Data Grid View
+            //Data Grid View
             FixedBug vu = new FixedBug();
             DataTable dt = vu.Select_fixed();
             dgv_fixed.DataSource = dt;

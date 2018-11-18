@@ -27,27 +27,30 @@ namespace WindowsFormsApp1
 
             if (Pwd.Equals(confirm_pwd))
             {
-                //connecting to the database
+                //Database connection 
                 MySqlConnection conn = new MySqlConnection("server = localhost; user id = root; database = bugtrack");
-
+                //Database connection
                 MySqlCommand sda = new MySqlCommand("INSERT INTO userdetails (username, password, confirmPassword, usertype) VALUES ('" + this.txt_user.Text + "','" + this.txt_pwd.Text + "','" + this.txt_confirmPwd.Text + "','" + this.combo_utype.Text + "')", conn);
                 MySqlDataReader MyReader;
                 conn.Open();
                 MyReader = sda.ExecuteReader();
                 MessageBox.Show("You are now registered. Please click ok");
-                //going to login page
+                //view login page
                 Form1 login = new Form1();
                 login.Show();
                 this.Hide();
-
-
             }
             else
-            {
+            { 
+                //Display message
                 MessageBox.Show("Password didnot matched !!!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 txt_confirmPwd.Focus();
             }
 
+        }
+
+        private void Register_Load(object sender, EventArgs e)
+        {
 
         }
     }

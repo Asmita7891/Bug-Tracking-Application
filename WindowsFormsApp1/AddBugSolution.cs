@@ -23,7 +23,6 @@ namespace WindowsFormsApp1
             this.Hide();
         }
  
-
         private void btn_save_Click(object sender, EventArgs e)
         {
             MySqlConnection conn = new MySqlConnection("server = localhost; user id = root; database = bugtrack");
@@ -42,19 +41,16 @@ namespace WindowsFormsApp1
             string ReportDate = reportDate.Text.Trim();
             string SolveDate = solvedate.Text.Trim();
             string status = cmbBox_status.Text.ToString();
-            //getting loggedin user in added by field
+
+            //Getting loggedin user in added by field
             string loggedusr = Form1.uname;
-
             string BugFixedName = loggedusr;
-
             ReportDate = DateTime.Now.ToString("yyyy-MM-dd");
             SolveDate = DateTime.Now.ToString("yyyy-MM-dd");
 
-
             try
             {
-                //connecting to the database
-
+                //Database connection
                 MySqlCommand sda = new MySqlCommand("INSERT INTO bugsolve (bugid, projectTitle, bugTitle, class,method,line,error,solution,reportdate,solvedate,status,BugFixedName) " +
                     "VALUES ('" + this.txtBox_bugID.Text + "','" + this.txtboxProject.Text + "','" + this.txt_bugtitle.Text + "','" + this.txt_class.Text + "','" + this.txt_method.Text + "','" + this.txt_line.Text + "'" +
                     ",'" + this.txtdes.Text + "','" + this.txt_bugsol.Text + "','" + this.reportDate.Text + "','" + this.solvedate.Text + "','" + this.cmbBox_status.Text + "',@BugFixedName)", conn);
@@ -68,18 +64,19 @@ namespace WindowsFormsApp1
                 if (rows > 0)
                 {
                     MessageBox.Show("bug fixed. click ok to continue");
-                    //connecting to the database
+                    //Database connection
                     MySqlConnection con = new MySqlConnection("server = localhost; user id = root; database = bugtrack");
-                    //getting data from database using dataadapter 
+                    //Getting data from database using DataAdapter 
                     MySqlDataAdapter adapter = new MySqlDataAdapter("update bugreport set status='" + this.cmbBox_status.Text + "' where id='" + this.txtBox_bugID.Text + "'", conn);
-                    //to hold data from database
+                    //Holding data from database
                     DataTable dt = new DataTable();
-                    adapter.Fill(dt);//it means the fill in our database
+                    adapter.Fill(dt);//It means the fill in our database
                     //Refresh Data Grid View
 
                     AddBugSolution abs = new AddBugSolution();
                     dt = abs.SelectBug();
                     dgv_sol.DataSource = dt;
+
                     //Clear all the Input fields
                     txtboxProject.Clear();
                     txt_bugtitle.Clear();
@@ -88,8 +85,6 @@ namespace WindowsFormsApp1
                     txt_line.Clear();
                     txtdes.Clear();
                     txt_bugsol.Clear();
-
-
                 }
                 else
                 {
@@ -112,19 +107,19 @@ namespace WindowsFormsApp1
         public DataTable SelectBug()
         {
 
-            //connecting to the database
+            //Database connection
             MySqlConnection conn = new MySqlConnection("server = localhost; user id = root; database = bugtrack");
-            //getting data from database using dataadapter 
+            //Getting data from database using DataAdapter 
             MySqlDataAdapter sda = new MySqlDataAdapter("Select * from bugreport where assignedto='" + Form1.uname + "'", conn);
-            //to hold data from database
+            //Holding data from database
             DataTable dt = new DataTable();
-            sda.Fill(dt);//it means the fill in our database
+            sda.Fill(dt);//It means the fill in our database
             return dt;
         }
 
         private void AddBugSolution_Load(object sender, EventArgs e)
         {
-            // Data Grid View
+            //Data Grid View
             AddBugSolution ab = new AddBugSolution();
             DataTable dt = ab.SelectBug();
             dgv_sol.DataSource = dt;

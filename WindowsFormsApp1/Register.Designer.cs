@@ -123,7 +123,7 @@
             // 
             // button_reg
             // 
-            this.button_reg.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.button_reg.BackColor = System.Drawing.Color.Blue;
             this.button_reg.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_reg.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.button_reg.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -172,6 +172,7 @@
             this.Name = "Register";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Register";
+            this.Load += new System.EventHandler(this.Register_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);

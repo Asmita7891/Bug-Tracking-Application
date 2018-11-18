@@ -25,11 +25,14 @@ namespace WindowsFormsApp1
     
         private void btn_login_Click(object sender, EventArgs e)
         {
-            string user = textBox_user.Text;//username
-            string pass = textBox_pwd.Text;//password
-            string uType = comboBox_utype.Text.Trim();//usertype
+            //Username
+            string user = textBox_user.Text;
+            //Password
+            string pass = textBox_pwd.Text;
+            //Usertype
+            string uType = comboBox_utype.Text.Trim();
 
-            //connecting to the database
+            //Database connection
             MySqlConnection conn = new MySqlConnection("server=localhost;user id=root;database=bugtrack");
 
             try
@@ -46,7 +49,7 @@ namespace WindowsFormsApp1
                 }
                 else
                 {
-                    //
+                    
                     if (dt.Rows[0][0].ToString() == "1")
                     {
                         // loggedIn = user;
@@ -74,7 +77,7 @@ namespace WindowsFormsApp1
                             case "user":
                                 {
 
-                                    //Display User Dashboard
+                                    // User Dashboard is displayed
                                      userPanel umenu = new userPanel();
                                     MessageBox.Show("Login was succesful.");
                                     umenu.Show();
@@ -83,7 +86,7 @@ namespace WindowsFormsApp1
                                 }
                             case "programmer":
                                 {
-                                    //Display programmer Dashboard
+                                    //Programmer Dashboard is displayed
                                      ProgrammerPanel pmenu = new ProgrammerPanel();
                                     MessageBox.Show("Login was succesful.");
                                     pmenu.Show();

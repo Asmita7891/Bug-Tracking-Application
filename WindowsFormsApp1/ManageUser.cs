@@ -23,11 +23,11 @@ namespace WindowsFormsApp1
         }
         public DataTable Select_user()
         {
-            //connecting to the database
+            //Database connection
             MySqlConnection conn = new MySqlConnection("server = localhost; user id = root; database = bugtrack");
-            //getting data from database using dataadapter 
+            //Getting data from database using DataAdapter 
             MySqlDataAdapter sda = new MySqlDataAdapter("Select * from userdetails", conn);
-            //to hold data from database
+            //Holding data from database
             DataTable dt = new DataTable();
             sda.Fill(dt);//it means the fill in our database
             return dt;
@@ -42,30 +42,28 @@ namespace WindowsFormsApp1
         }
         public DataTable Search(string keyword)
         {
-            //connecting to the database
+            //Database connection
             MySqlConnection conn = new MySqlConnection("server = localhost; user id = root; database = bugtrack");
-            //getting data from database using dataadapter 
+            //Getting data from database using DataAdapter 
             MySqlDataAdapter sda = new MySqlDataAdapter("SELECT * FROM userdetails WHERE username LIKE '%" + keyword + "%'", conn);
-            //to hold data from database
+            //Holding data from database
             DataTable dt = new DataTable();
-            sda.Fill(dt);//it means the fill in our database
+            sda.Fill(dt);//It means the fill in our database
             return dt;
 
         }
 
         private void text_search_TextChanged(object sender, EventArgs e)
         {
-            //get keyword from textbox 
+            //Get keyword from textbox 
             string keyword = text_search.Text;
             ManageUser vu1 = new ManageUser();
-            //check if keywords have value or not
+            //Check if keywords have value or not
             if (keyword != null)
             {
                 //show user based based on keywords
-
                 DataTable dt = vu1.Search(keyword);
                 dataGridView1.DataSource = dt;
-
             }
             else
             {

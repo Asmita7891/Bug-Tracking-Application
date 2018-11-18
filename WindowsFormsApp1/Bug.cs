@@ -21,17 +21,17 @@ namespace WindowsFormsApp1
 
         public DataTable Select_bug()
         {
-            //connecting to the database
+            //Database connection
             MySqlConnection conn = new MySqlConnection("server = localhost; user id = root; database = bugtrack");
-            //to hold data from database
+            //Holding data from database
             DataTable dt = new DataTable();
             try
             {
-                //getting data from database using dataadapter 
+                //Getting data from database using dataadapter 
                 MySqlDataAdapter sda = new MySqlDataAdapter("Select * from bugreport", conn);
 
 
-                sda.Fill(dt);//it means the fill in our database
+                sda.Fill(dt);//It means the fill in our database
 
             }
             catch (Exception ex)
@@ -52,17 +52,17 @@ namespace WindowsFormsApp1
         {
 
 
-            //connecting to the database
+            //Database connection
             MySqlConnection conn = new MySqlConnection("server = localhost; user id = root; database = bugtrack");
-            //getting data from database using dataadapter 
+            //Getting data from database using DataAdapter 
             MySqlDataAdapter sda = new MySqlDataAdapter("SELECT * FROM bugreport WHERE project LIKE '%" + keyword + "%'", conn);
-            //to hold data from database
+            //Holding data from database
             DataTable dt = new DataTable();
-            sda.Fill(dt);//it means the fill in our database
+            sda.Fill(dt);//It means the fill in our database
             return dt;
 
         }
-        //for searching 
+        //For searching 
         private void textBox_search_TextChanged(object sender, EventArgs e)
         {
             //get keyword from textbox 
@@ -72,7 +72,6 @@ namespace WindowsFormsApp1
             if (keyword != null)
             {
                 //show user based based on keywords
-
                 DataTable dt = vb1.Search_bug(keyword);
                 dataGridView.DataSource = dt;
 
@@ -104,12 +103,14 @@ namespace WindowsFormsApp1
             string type = Form1.usertype;
             if (type == "admin")
             {
+                //Admin Dashboard
                 adminPanel admin = new adminPanel();
                 admin.Show();
                 this.Hide();
             }
             else
             {
+                //User Dashboard
                 userPanel home = new userPanel();
                 home.Show();
                 this.Close();
@@ -146,22 +147,19 @@ namespace WindowsFormsApp1
             string ReportDate = reportDate.Text.Trim();
             string ImagePath = lbl_img_path.Text.Trim();
             string status = combo_bugStatus.Text.ToString();
-            //getting loggedin user in added by field
+            
+            //Getting loggedin user in added by field
             string loggeduser = Form1.uname;
-
             string reportedby = loggeduser;
-
             ReportDate = DateTime.Now.ToString("yyyy-MM-dd");
 
 
             try
             {
-                //connecting to the database
-
+                //Database connection
                  MySqlCommand sda = new MySqlCommand("INSERT INTO bugreport (project, bugtitle, bugissue, reportdate,status,image,reportedby) VALUES ('" + this.comboBox_project.Text + "','" + this.textBox_bugtitle.Text + "','" + this.textBox_bugissue.Text + "','" + this.reportDate.Text + "','" + this.combo_bugStatus.Text + "','"+this.lbl_img_path.Text+ "',@reportedby)", conn);
                 sda.Parameters.AddWithValue("@reportedby", reportedby);
                  conn.Open();
-
                 int rows = sda.ExecuteNonQuery();
                 //if Inserted rows is greater is greater than 0
                 //Else set isSuccess to false, Save Failed
@@ -181,8 +179,6 @@ namespace WindowsFormsApp1
                     reportDate.Text = "";
                     lbl_img_path.Text = "path";
                     combo_bugStatus.Text = "";
-
-
                 }
                 else
                 {
@@ -209,7 +205,7 @@ namespace WindowsFormsApp1
             string type = Form1.usertype;
             if (type == "admin")
             {
-                //connecting to the database
+                //Database connection
                 MySqlConnection conn = new MySqlConnection("server = localhost; user id = root; database = bugtrack");
 
                 MySqlCommand sda = new MySqlCommand("DELETE FROM bugreport WHERE id='" + this.textBox_bugid.Text + "'", conn);
@@ -244,6 +240,7 @@ namespace WindowsFormsApp1
             }
             else
             {
+                //Display message
                 MessageBox.Show("Sorry! You are not allowed to remove any data.");
             }
         }
@@ -272,8 +269,7 @@ namespace WindowsFormsApp1
 
             try
             {
-                //connecting to the database
-
+                //Database connection
                 MySqlCommand sda = new MySqlCommand("update bugreport set project='" + this.comboBox_project.Text + "',bugtitle='" + this.textBox_bugtitle.Text + "',bugissue='" + this.textBox_bugissue.Text + "',reportdate='" + this.reportDate.Text + "',status='" + this.combo_bugStatus.Text + "',image='" + this.lbl_img_path.Text + "' where bugreport.id='" + this.textBox_bugid.Text + "'", conn);
                  conn.Open();
 
@@ -296,8 +292,6 @@ namespace WindowsFormsApp1
                     reportDate.Text = "";
                     lbl_img_path.Text = "path";
                     combo_bugStatus.Text = "";
-
-
                 }
                 else
                 {

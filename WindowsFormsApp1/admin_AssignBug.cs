@@ -19,14 +19,14 @@ namespace WindowsFormsApp1
         }
         public DataTable SelectBug()
         {
-            //connecting to the database
+            //Database connection
             MySqlConnection conn = new MySqlConnection("server = localhost; user id = root; database = bugtrack");
             DataTable dt = new DataTable();
 
             try
             {
 
-                //getting data from database using dataadapter 
+                //Getting data from database using DataAdapter 
                 MySqlDataAdapter sda = new MySqlDataAdapter("Select * from bugreport", conn);
 
                 //Create a Datatable to hold the records from database
@@ -50,14 +50,14 @@ namespace WindowsFormsApp1
         }
         public DataTable Selectutype()
         {
-            //connecting to the database
+            //Database Connection
             MySqlConnection conn = new MySqlConnection("server = localhost; user id = root; database = bugtrack");
             DataTable dt = new DataTable();
 
             try
             {
 
-                //getting data from database using dataadapter 
+                //Getting data from database using DataAdapter 
                 MySqlDataAdapter sda = new MySqlDataAdapter("Select username from userdetails where usertype='programmer'", conn);
 
                 //Create a Datatable to hold the records from database
@@ -82,17 +82,15 @@ namespace WindowsFormsApp1
 
         private void admin_AssignBug_Load(object sender, EventArgs e)
         {
-            //creating datatable to hold the categories from database
+            //Datatable created to hold the categories from database
             admin_AssignBug a = new admin_AssignBug();
             DataTable dtassign = a.Selectutype();
-            //specify datasource for assigned box
+            //Specify datasource for assigned box
             comboBox_assign.DataSource = dtassign;
-            //specify display member and valuemenber for combobox
+            //Specify display member and valuemenber for combobox
             comboBox_assign.DisplayMember = "username";
             comboBox_assign.ValueMember = "username";
-
-
-            //datagird view 
+            //Data Gird view 
             admin_AssignBug vu = new admin_AssignBug();
             DataTable dt = vu.SelectBug();
             dataGridView1.DataSource = dt;
@@ -113,7 +111,6 @@ namespace WindowsFormsApp1
                 textBox_bugID.Text = BugID;
                 textBox_BugTitle.Text = BugTitle;
              
-
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -130,8 +127,7 @@ namespace WindowsFormsApp1
             }
             string BugTitle = textBox_BugTitle.Text.Trim();
 
-
-            //connecting to the database
+            //Database connection
             MySqlConnection conn = new MySqlConnection("server = localhost; user id = root; database = bugtrack");
             try
             {

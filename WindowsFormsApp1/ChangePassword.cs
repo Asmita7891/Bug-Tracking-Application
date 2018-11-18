@@ -41,7 +41,7 @@ namespace WindowsFormsApp1
 
             string oldpwd = txt_oldpwd.Text;
             string newpwd = txt_newPwd.Text;
-            //connecting to the database
+            //Database Connection
             string pas = Form1.userpasswor;
             string type = Form1.usertype;
            
@@ -61,7 +61,7 @@ namespace WindowsFormsApp1
                 if (rows > 0)
                 {
                     MessageBox.Show("Password changed. Please click ok to continue");
-                    //going to dashboard page
+                    //Dashboard page
                     if (type=="user")
                     {
                         userPanel dash = new userPanel();
@@ -70,6 +70,7 @@ namespace WindowsFormsApp1
                     }
                     else
                     {
+                        //Dashboard page
                         ProgrammerPanel pdash = new ProgrammerPanel();
                         pdash.Show();
                         this.Hide();
@@ -78,6 +79,8 @@ namespace WindowsFormsApp1
                 }
                 else
                 {
+
+                    //Display message
                     MessageBox.Show("Password failed to changed. click ok to continue");
 
                 }
@@ -85,6 +88,7 @@ namespace WindowsFormsApp1
             }
             else
             {
+                //Display message
                 MessageBox.Show("Old password didnot mathed");
             }
         }
